@@ -1,4 +1,4 @@
-#include "cub3d.h"
+#include "../include/cub3d.h"
 
 void    ft_duplicate_map(t_data *d)
 {

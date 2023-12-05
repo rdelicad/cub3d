@@ -1,4 +1,4 @@
-#include "cub3d.h"
+#include "../include/cub3d.h"
 
 int	ft_check_parameters(t_data *d)
 {
