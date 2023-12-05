@@ -6,8 +6,12 @@
             "command": "/usr/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
+                "-g", "-Wall", "-Wextra", "-Werror",
+                "../src/*.c",
+                "../MLX42/libmlx42.a",
+                "-I/include",
+                "-lglfw",
+                "-L/Users/rdelicad/.brew/opt/glfw/lib/",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

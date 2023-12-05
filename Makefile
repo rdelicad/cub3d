@@ -14,7 +14,7 @@ RESET     := \033[0m
 # --- Name & flags ---
 CC		= gcc
 NAME	= cub3d
-CFLAGS	= -Wall -Werror -Wextra
+CFLAGS	= -g -Wall -Werror -Wextra
 
 # --- Library ---
 
