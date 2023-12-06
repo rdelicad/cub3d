@@ -67,7 +67,10 @@ void	ft_initialize_data(t_data *d)
 	ft_number_rows(d);
 	ft_check_characters(d);
 	ft_create_map(d);
-	ft_walls(d);
-	//ft_check_limits(d);
+	if (ft_walls_horizontal(d) == 0)
+		ft_error_messages(3);
+	if (ft_walls_vertical(d) == 0)
+		ft_error_messages(4);
+	ft_check_limits(d);
 	
 }

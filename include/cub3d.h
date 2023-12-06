@@ -35,7 +35,9 @@ int			ft_check_parameters(t_data *d);
 void		ft_check_characters(t_data *d);
 int			ft_allow_chars(char *s, t_data *d);
 int			surrounded_by_walls(char *s);
-void		ft_walls(t_data *d);
+int			ft_walls_horizontal(t_data *d);
+int			ft_walls_vertical(t_data *d);
+bool dfs(t_data *d, int x, int y, bool visited[d->number_rows][d->number_cols])
 
 // 110INITIALIZE
 void		ft_initialize_data(t_data *d);
